@@ -1,0 +1,431 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+  a{
+  text-decoration: none;
+  color: #000;
+}
+  .header {
+    display: flex;
+  }
+  .header__title{
+    margin-top: 1.5%;
+    margin-left: 2%;
+  }
+  .nav {
+    display: flex;
+    font-size: 1em;
+    margin-top: 1.5%;
+    margin-left: 72%;
+  }
+  .nav__item {
+    list-style: none; 
+    padding: 0; 
+    display: inline; 
+  }
+  .nav__item:not(:last-child):after {
+    content: "|"; 
+    margin: 0 8px; 
+    color: #000; 
+  }
+  .footer{
+    width: 80%;
+    margin-left: 10%;
+  }
+  .footer__nav{
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__contact--icon{
+    color: #000;
+    background-color: white;
+    margin: 5%;
+  }
+
+
+                                /* Style Index */
+
+
+  .main--index{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-left: 12.5%;
+    margin-bottom: 10%;
+    width: 75%;
+  }
+  .hero{
+    display: flex;
+    justify-content: center;
+  }
+  .hero__image--profil{
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+  }
+  .about{
+    display: block;
+    align-items: center;
+    width: 60%;
+    height: 80%;
+  }
+  .about__title--index{
+    font-size: 2.2rem;
+  }
+  .about__container{
+    line-height: 2rem;
+  }
+  .about__list--index {
+    display: flex;
+  }
+  .about__list--index{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+
+  }
+  .about__bouton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 20em; 
+  }
+  .about__bouton--orange{
+    background-color: rgb(234, 134, 13);
+  }
+  .about__bouton--red{
+    background-color: rgb(175, 10, 10);
+  }
+  .about__bouton--aqua{
+    background-color: rgb(6, 238, 238);
+  }
+
+
+                              /* Style CV */
+
+
+.main--cv{
+  display: block;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  line-height: 2rem;
+}
+.main__title, .section__experience, .hr__cv{
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+.container__space{
+  display: flex;
+  justify-content: space-between;
+}
+.experience__title{
+  font-size: 1.5rem;
+}
+
+
+                                /* Style Projets */
+
+
+  .main--projets{
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .main__title--projet{
+    margin-top: 7%;
+    font-size: 1.3rem;
+  }
+  .section{
+    display: block;
+    width: 100%;
+  }
+  .section__about--title{
+    margin-top: 5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+  .section__about{
+    display: flex;
+    margin-bottom: 10%;
+    margin-left: 2.5%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .section__about--container{
+    width: 40%;
+  }
+  .section__about--image{
+    width: 50%;
+    height: 30%;
+  }
+
+
+                                  /*  Style Contact*/
+
+
+.main--contact{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8%;
+  margin-left: 10%;
+  margin-bottom: 13%;
+  width: 80%;
+  height: 100%;
+}
+.contact{
+  width: 30%;
+}
+.contact__title{
+  margin-left: 4%;
+  font-size: 1.5rem;
+}
+.contact__container{
+  align-items: center;
+  font-size: 1.2rem;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+.contact__us{
+  margin: 3%;
+}
+.form{
+  width: 50%;
+}
+.form__container{
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+}
+.form__container--style{
+  height: 2.5rem;
+  width: 20rem;
+}
+.form__container--lastname, .form__container--subject {
+  margin-left: 20%;
+}
+.container__message{
+  width: 35%;
+}
+.form__message--style{
+  width: 95%;
+}
+.container__submit{
+  background-color: orange;
+  height: 7rem;
+  width: 7rem;
+  margin-left: 15%;
+  border-radius: 50%; 
+}
+
+
+/*********************************** Responsive **********************************/
+
+/*------------------------------------ Mobile -----------------------------------*/
+
+@media screen and (max-width: 428px) {
+
+  /*--- Header mobile ---*/
+
+  .header{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .header__title, .nav, .nav__list, .nav__item{
+    margin: 0;
+    margin-top: 3%;
+    padding: 0;
+  }
+
+  /*--- main index ---*/
+
+  .main--index{
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0%;
+    margin-top: 15%;
+    width: 100%;
+  }
+  .about{
+    margin-top: 10%;
+    text-align: center;
+    width: 90%;
+  }
+  .about__list--index{
+    margin-top: 10%;
+    width: 100%;
+  }
+
+  /*--- main cv mobile ---*/
+
+  .main--cv{
+    margin-top: 15%;
+    width: 95%;
+    margin-left: 2.5%;
+    
+  }
+  .container__space{
+    flex-wrap: wrap;
+  }
+
+  /*--- main projet mobile ---*/
+  .main--projets{
+    margin-top: 12%;
+  }
+  .main__title--projet{
+    margin: 0;
+    text-align: center;
+  }
+  .section__about--title{
+    margin: 0%;
+    margin-top: 10%;
+  }
+  .section__about{
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  .section__about--container{
+    width: 100%;
+  }
+  .section__about--image{
+    width: 100%;
+    height: 80%;
+  }
+
+  /*--- main contact mobile ---*/
+
+  .main--contact{
+    margin-top: 15%;
+    margin-left: 5%;
+    width: 90%;
+    display: block;
+  }
+  .contact{
+    text-align: center;
+    width: 100%;
+  }
+  .form{
+    width: 100%;
+  }
+  .form__container{
+    display: block;
+    align-items: center;
+    margin-top: 10%;
+  }
+  .form__container--style, .form__container--message{
+    margin-bottom: 5%;
+  }
+  .form__container--lastname, .form__container--subject {
+    margin-left: 0%;
+  }
+  .container__message{
+    width: 91%;
+  }
+  .container__submit{
+    margin-left: 35%;
+  }
+
+  /*--- Footer mobile ---*/
+
+  .footer{
+    margin-top: 20%;
+  }
+  .footer__nav{
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .footer__contact{
+    width: 80%;
+    margin-top: 6%;
+    margin-left: 10%;
+  }/*deploiement*/
+
+}
+
+/*---------------------------------- Tablette -----------------------------------*/
+
+@media screen and (min-width: 429px) and (max-width: 884px){
+
+  /*--- Header tablette ---*/
+
+  .header{
+    justify-content: space-between;
+  }
+  .nav{
+    margin: 0%;
+  }
+
+  /*--- main index tablette ---*/
+
+  .main--index{
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0%;
+    margin-top: 10%;
+    width: 100%;
+    margin-bottom: 10%;
+  }
+  .about{
+    margin-top: 7%;
+    text-align: center;
+    width: 90%;
+  }
+  .about__list--index{
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  /*--- main projet tablette ---*/
+
+  .main--projets{
+    width: 100%;
+    margin-left: 0%;
+  }
+  .main__title--projet{
+    margin-bottom: 7%;
+    margin-left: 2.5%;
+  }
+  .section__about--title{
+    margin: 0%;
+    margin-left: 2.5%;
+  }
+
+  /*--- main contact tablette---*/
+
+  .main--contact{
+    display: block;
+    margin-top: 10%;
+    margin-left: 5%;
+    width: 90%;
+  }
+  .contact__title, .contact__title, .contact__container, .contact__us{
+    margin: 0%;
+    margin-top: 7%;
+  }
+  .form{
+    width: 100%;
+  }
+  .form__container--style{
+    height: 2.5rem;
+    width: 21rem;
+  }
+  .form__container{
+    width: 100%;
+  }
+  .form__container--lastname, .form__container--subject {
+    margin-left: 27%;
+  }
+  .container__message{
+    width: 45%;
+  }
+  .container__submit{
+    margin-left: 11%;
+  }
+}

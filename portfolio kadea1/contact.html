@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Projets.html">
+    <link rel="stylesheet" href="Contact.html">
+    <link rel="stylesheet" href="CV.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Contact</title>
+</head>
+<body>
+    <header class="header">
+        <h3 class="header__title"><a href="index.html">monic moseka</a></h3>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="CV.html">CV</a></li>
+                <li class="nav__item"><a href="Projets.html">Projets</a></li>
+                <li class="nav__item"><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>  
+    <main class="main--contact">
+        <section class="contact">
+            <h3 class="contact__title">Contact</h3>
+            <p class="contact__container">
+                <strong>Télephone</strong><br>
+                <a class="contact__us" href="callto:+243892239178">+243892239178</a>
+            </p>
+            <p class="contact__container">
+                    <strong>Email</strong><br>
+                    <a class="contact__us" href="mailto:sarahmosky@gmail.com">sarahmosky@gmail.com</a>
+            </p>
+        </section>
+        <section class="form">
+            <form action="post" method="get">
+                <div class="form__container">
+                    <div class="container__name">
+                        <label for="firstname" class="form__container--firstname">First Name</label><br>
+                        <input type="text" name="firstname" id="firstname" class="form__container--style form__container--firstname">
+                    </div>
+                    <div class="container__name">
+                        <label for="lastname" class="form__container--lastname">Last Name</label><br>
+                        <input type="text" name="lastname" id="lastname" class="form__container--style form__container--lastname">
+                    </div>
+                </div>
+                <div class="form__container">
+                    <div class="container__mail">
+                        <label for="email">Email</label><br>
+                        <input type="email" name="Email" id="email" class="form__container--style form__container--email">
+                    </div>
+                    <div class="container__mail">
+                        <label for="subject" class="form__container--subject">Subject</label><br>
+                        <input type="text" name="subject" id="subject" class="form__container--style form__container--subject">
+                    </div>
+                </div>
+                <div class="form__container">
+                    <div class="container__message">
+                        <label for="message">Message</label><br>
+                        <textarea name="message" id="message" class="form__container--message form__message--style" rows="8"></textarea>
+                    </div>
+                    <input type="submit" class="container__submit">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <hr class="footer__line">
+        <div class="footer__nav">
+            <div class="footer__contact">
+                <div><strong>Télephone</strong></div>
+                <p><a href="tel:+243842315918">+243892239178</a></p>
+            </div>
+            <div class="footer__contact">
+                <div><strong>Email</strong></div>
+                <p><a href="mailto:sarahmosky@gmail.com">info@mysite.com</a></p>
+            </div>
+            <div class="footer__contact">
+                <div class="footer__contact"><strong>Suivez-moi</strong><br>
+                    <p>
+                      <a href="#"><iconify-icon icon="simple-icons:instagram" width="20"></iconify-icon></a>
+                      <a href="#"><iconify-icon icon="fe:facebook" width="20"></iconify-icon></a>
+                      <a href="#"><iconify-icon icon="simple-icons:twitter" width="20"></iconify-icon></a>   
+                    </p>
+                </div>
+            </div>
+            <div class="footer__contact">@2024 By monic moseka</div>
+        </div>
+    </footer>
+</body>
+</html>
